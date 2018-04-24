@@ -3,7 +3,7 @@
 using namespace std;
 int numeroperfecto(int);
 int esprimo(int);
-int numerosprimos(int);
+
 int intercambio(int, int);
 int bits(int, int);
 
@@ -28,7 +28,7 @@ int numeroperfecto(int)
 int main(){
 
     esprimo(7);
-    numerosprimos(5);
+    
     bits(9,4);
     intercambio(3,5);
     numeroperfecto(9);
@@ -49,17 +49,8 @@ int esprimo(int n){
     }
     return 0;
 }
-int numerosprimos(int n){
-    int i=0;
-    int x=2;
-    while(i<n){
-        if(esprimo(x)){
-            cout<<x<<",";
-            i++;
-        }
-        x++;
-    }
-}
+
+
 int intercambio(int e, int r){
     int c;
     e=e+r;
